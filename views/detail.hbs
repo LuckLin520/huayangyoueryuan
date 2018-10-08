@@ -1,0 +1,76 @@
+{{!< default}} 
+<section id="top-banner" >
+    <img src="/images/banner/shishengfengcai.jpg" class="img-fluid">
+</section>
+
+   
+  {{!-- <section id="bread" class="border-bottom">
+        <div class="container">
+        <span class="bread-nav">您的位置 :&nbsp;
+            <a href="#">首页</a> &nbsp;>&nbsp;
+            <a href="#" class="hl">新闻中心</a>
+        </span>
+    </div>
+    </section> --}}
+<!-- <hr class="test"> -->
+    <div id="post" class="container">
+        <div class="row justify-content-center mb-1">
+             <h1>{{data.title}}</h1>
+        </div>
+
+        <div class="row justify-content-center border-bottom">
+            <span class="sub-h1">时间: {{data.time}} </span>
+        </div>
+
+        <div class="row pt-62 p-2">
+            <div class="col-lg-12 newscontent">
+                {{{data.content}}}
+            </div>
+        </div>
+
+
+        <a href="/{{cat}}/all/1" class="rm-under">
+   
+        <div class="row justity-content-center border-top border-bottom return">
+          <div class="col-md-12 text-center p-2">
+               返回列表   
+          </div> 
+        </div>
+    </a>
+
+    </div>
+
+<section id="contact">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-4">
+
+                <h4 class="title">
+                    联系我们
+                </h4>
+
+                <h5 class="sub-title">
+                    CONTACT US
+                </h5>
+            </div>
+            <div class="col-md-4">
+
+                <p> 地址: {{contact.addr}}</p>
+                <p> 邮编: {{contact.postcode}}</p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <p>邮箱: {{contact.email}}</p>
+                <p>电话: <strong>{{contact.tel}}</strong></p>
+            </div>
+
+            <div class="col-md-1 pt-3 show-qrcode">
+                <a href="javascript:void(0)" class="wechat">
+                    <img src="/images/wechat.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

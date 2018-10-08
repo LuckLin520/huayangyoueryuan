@@ -1,0 +1,42 @@
+<section class="tea-info">
+    <div class="contianer">
+        {{data.title}}
+    </div>
+</section>
+
+
+
+<section id="contact">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-4">
+
+                <h4 class="title">
+                    联系我们
+                </h4>
+
+                <h5 class="sub-title">
+                    CONTACT US
+                </h5>
+            </div>
+            <div class="col-md-4">
+
+                <p> 地址: {{contact.addr}}</p>
+                <p> 邮编: {{contact.postcode}}</p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <p>邮箱: {{contact.email}}</p>
+                <p>电话: <strong>{{contact.tel}}</strong></p>
+            </div>
+
+            <div class="col-md-1 pt-3 show-qrcode">
+                <a href="javascript:void(0)" class="wechat">
+                    <img src="/images/wechat.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

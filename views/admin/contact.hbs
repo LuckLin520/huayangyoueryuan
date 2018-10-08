@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Meta, title, CSS, favicons, etc. -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>华阳幼儿园管理系统</title>
+
+	<!-- Bootstrap -->
+	<link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- NProgress -->
+	<link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+	<!-- iCheck -->
+	<link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+	<!-- bootstrap-progressbar -->
+	<link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+	<!-- JQVMap -->
+	<link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+	<!-- bootstrap-daterangepicker -->
+	<link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+	<!-- Custom Theme Style -->
+	<link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col">
+				<div class="left_col scroll-view">
+					<div class="navbar nav_title" style="border: 0;">
+						<a href="index.html" class="site_title">
+							<span>华阳幼儿园管理系统</span>
+						</a>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<br />
+
+					<!-- sidebar menu -->
+				    <!-- sidebar menu -->
+             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <!-- <h3>General</h3> -->
+              <ul class="nav side-menu">
+                <li>
+                  <a>
+                    <i class="fa fa-home"></i> 基本信息
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu">
+                    <li>
+                      <a href="/admin/contact">联系方式</a>
+                    </li>
+                    <!-- <li><a href="index2.html">Dashboard2</a></li>
+                      <li><a href="index3.html">Dashboard3</a></li> -->
+                  </ul>
+                </li>
+
+
+                  <li>
+                  <a>
+                    <i class="fa fa-clone"></i>集团信息
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="/admin/group-list">人员照片</a>
+                      </li>
+                    </ul>
+                </li>
+                <li>
+                 <li>
+                  <a>
+                    <i class="fa fa-clone"></i>教师风采
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                    <ul class="nav child_menu">
+                      <li>
+                       <a href="/admin/teacher-boss-list">园长信息</a>
+                      </li>
+                        <li>
+                        <a href="/admin/teacher-list">明星教师</a>
+                      </li>
+											<li>
+                        <a href="/admin/teacher-good">最美华幼人</a>
+                      </li>
+                    </ul>
+                </li>
+                <li>
+                  <a href="/admin/child-list">
+                    <i class="fa fa-desktop"></i> 宝贝风采
+                    {{!-- <span class="fa fa-chevron-down"></span> --}}
+                  </a>
+                  {{!-- <ul class="nav child_menu">
+                    <li>
+                      <a href="general_elements.html">班级星宝贝</a>
+                    </li>
+                    <li>
+                      <a href="media_gallery.html">获奖宝贝</a>
+                    </li>
+                    <li>
+                      <a href="typography.html">宝贝作品</a>
+                    </li>
+
+                  </ul> --}}
+                </li>
+
+                <li>
+                  <a>
+                    <i class="fa fa-clone"></i>信息发布
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="/admin/news-list">新闻</a>
+                      </li>
+											<li>
+                        <a href="/admin/video-list">新闻小视频</a>
+                      </li>
+											 <li>
+                        <a href="/admin/activity-list">活动</a>
+                      </li>
+                      <li>
+                        <a href="/admin/parenting-list">家园印记</a>
+                      </li>
+											<li>
+                        <a href="/admin/picbook-list">绘本推荐</a>
+                      </li>
+											<li>
+                        <a href="/admin/cookbook-list">幼儿食谱</a>
+                      </li>
+											<li>
+                        <a href="/admin/specialfocus-list">特别关注</a>
+                      </li>
+                      <li>
+                        <a href="/admin/course-list">专家说教</a>
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+					<!-- /sidebar menu -->
+
+					<!-- /menu footer buttons -->
+					<div class="sidebar-footer hidden-small">
+						<a data-toggle="tooltip" data-placement="top" title="Settings">
+							<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+						</a>
+						<a data-toggle="tooltip" data-placement="top" title="FullScreen">
+							<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+						</a>
+						<a data-toggle="tooltip" data-placement="top" title="Lock">
+							<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+						</a>
+						<a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+							<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+						</a>
+					</div>
+					<!-- /menu footer buttons -->
+				</div>
+			</div>
+
+			<!-- top navigation -->
+			<div class="top_nav">
+				<div class="nav_menu">
+					<nav>
+						<div class="nav toggle">
+							<a id="menu_toggle">
+								<i class="fa fa-bars"></i>
+							</a>
+						</div>
+
+						<ul class="nav navbar-nav navbar-right">
+						</ul>
+						</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- /top navigation -->
+
+			<!-- page content -->
+			<div class="right_col" role="main">
+				<div class="">
+					<div class="page-title">
+						<div class="title_left">
+							<h2>联系方式更新</h2>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<form action="/admin/contact" method="POST" enctype="application/x-www-form-urlencoded">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="x_panel">
+								<!-- <div class="x_content"> -->
+								<div class="row">
+									<label class="control-label col-md-1 col-sm-1 col-xs-12">地址</label>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<input type="text" name="addr" id="title" value="{{contact.addr}}" class="form-control">
+									</div>
+
+								</div>
+	<br>
+								<div class="row">
+									<label class="control-label col-md-1 col-sm-1 col-xs-12">邮编</label>
+									<div class="col-md-2 col-sm-2 col-xs-2">
+										<input type="text" name="postcode" id="title" value="{{contact.postcode}}" class="form-control">
+									</div>
+
+								</div>
+<br>
+								<div class="row">
+									
+									<label class="control-label col-md-1 col-sm-1 col-xs-12">邮箱</label>
+									<div class="col-md-2 col-sm-2 col-xs-2">
+										<input type="text" name="email" id="title" value="{{contact.email}}" class="form-control">
+									</div>
+
+								</div>
+
+								<br>
+								<div class="row">
+									<label class="control-label col-md-1 col-sm-1 col-xs-12">电话</label>
+									<div class="col-md-2 col-sm-2 col-xs-2">
+										<input type="text" name="tel" id="title" value="{{contact.tel}}" class="form-control" required>
+									</div>
+
+								</div>
+								<br>
+								<br>
+								<br>
+								<button class="btn btn-primary" type="submit">更新</button> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="text-success h4">{{message}} </span>
+
+
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<!-- /page content -->
+
+			<!-- footer content -->
+			<footer>
+				<div class="pull-right">
+					Gentelella - Bootstrap Admin Template by
+					<a href="https://colorlib.com">Colorlib</a>
+				</div>
+				<div class="clearfix"></div>
+			</footer>
+			<!-- /footer content -->
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="../vendors/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- FastClick -->
+	<script src="../vendors/fastclick/lib/fastclick.js"></script>
+	<!-- NProgress -->
+	<script src="../vendors/nprogress/nprogress.js"></script>
+	<!-- Chart.js -->
+	<script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+	<!-- gauge.js -->
+	<script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+	<!-- bootstrap-progressbar -->
+	<script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+	<!-- iCheck -->
+	<script src="../vendors/iCheck/icheck.min.js"></script>
+	<!-- Skycons -->
+	<script src="../vendors/skycons/skycons.js"></script>
+	<!-- Flot -->
+	<script src="../vendors/Flot/jquery.flot.js"></script>
+	<script src="../vendors/Flot/jquery.flot.pie.js"></script>
+	<script src="../vendors/Flot/jquery.flot.time.js"></script>
+	<script src="../vendors/Flot/jquery.flot.stack.js"></script>
+	<script src="../vendors/Flot/jquery.flot.resize.js"></script>
+	<!-- Flot plugins -->
+	<script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+	<script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+	<script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+	<!-- DateJS -->
+	<script src="../vendors/DateJS/build/date.js"></script>
+	<!-- JQVMap -->
+	<script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+	<script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+	<script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+	<!-- bootstrap-daterangepicker -->
+	<script src="../vendors/moment/min/moment.min.js"></script>
+	<script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+	<!-- Custom Theme Scripts -->
+	<script src="../build/js/custom.min.js"></script>
+
+</body>
+
+</html>

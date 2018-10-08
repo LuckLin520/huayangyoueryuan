@@ -1,0 +1,171 @@
+{{!
+< default}} <section id="top-banner">
+    <img src="/images/banner/jiayuangongyu.jpg" class="img-fluid">
+    </section>
+
+
+
+
+    <section id="parenting">
+        <h4 class="leaf py-5 text-center mt-r-5" style="position:relative">家园印记
+            <a href="/impress/all/1" class="a-clear" style="position:absolute;left:70vw;line-height:40px;">more
+                <span class="more"></span>
+            </a>
+        </h4>
+
+        <div class="d-flex justify-content-center flex-wrap">
+
+            {{#each schooling}}
+            <a href="/detail/parenting/{{id}}">
+                <div class="award-item" style="width:340px;">
+                    <img src="{{cover}}" class="mr-2" height="191" width="319" style="object-fit:cover" alt="">
+                    <div class=" py-2" style="padding-right:10px;">
+                        <span class="p-name">{{title}}</span>
+                        <p class="s-name">{{breif}}</p>
+                    </div>
+                </div>
+            </a>
+            {{/each}}
+        </div>
+    </section>
+
+    <section id="parenting">
+        <h4 class="leaf py-5 text-center mt-r-5">安全课堂</h4>
+        {{!-- d-flex justify-content-center flex-wrap --}}
+        <div class="">
+            <div class="container">
+                <div style="text-align:center;margin-bottom:1.5vw;"><img src="/images/anquanketang/anquanketang.jpg" style="width:100%;max-width:554px;"></div>
+                <div style="text-align:center">
+                    <p>正确的触摸方式会让人心情愉悦，增进感情；</p>
+                    <p>记住：背心、裤衩覆盖的地方，不可以让别人触摸；</p>
+                    <p>如果有人用让你感到不舒服，或令你害怕的方式触摸你， 你应该勇敢的大声说“不要！别碰我！”；</p>
+                    <p>大部分的暴力伤害都是由孩子熟悉或者信赖的人做的，不管他是陌生人还是你认识的人，包括朋友、邻居、亲戚在内；</p>
+                    <p>如果这种情况发生了，你绝不能保守秘密，要告诉爸爸妈妈，或者是其他你信任的大人。</p>
+                    {{!-- <video src=""></video> --}}
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="workspace" class="mt-5 pt-5" style="background:#fff">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h4 class="leaf" style="position:relative">幼儿食谱
+                        <a href="/cookbook/all/1" class="a-clear" style="position:absolute;left:70vw;line-height:40px;">more
+                            <span class="more"></span>
+                        </a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container clearfix">
+            {{#each cookbook}}
+                <div style="display:flex;flex-wrap:wrap;justify-content:space-between;">
+                   <div style="width:47%;margin-bottom:2rem;">
+                        <img src="/images/cookbook-logo/all-logo.webp" style="width:11vw;margin:10px;">
+                        <img src="{{coverAll}}" style="width:100%" alt="总园食谱">
+                   </div>
+                   <div style="width:47%;margin-bottom:2rem;">
+                        <img src="/images/cookbook-logo/w-logo.webp" style="width:11vw;margin:10px;">
+                        <img src="{{coverW}}" style="width:100%" alt="西园食谱">
+                   </div>
+                   <div style="width:47%;margin-bottom:2rem;">
+                        <img src="/images/cookbook-logo/e-logo.webp" style="width:11vw;margin:10px;">
+                        <img src="{{coverE}}" style="width:100%" alt="东园食谱">
+                   </div>
+                   <div style="width:47%;margin-bottom:2rem;">
+                        <img src="/images/cookbook-logo/s-logo.webp" style="width:11vw;margin:10px;">
+                        <img src="{{coverS}}" style="width:100%" alt="南园食谱">
+                   </div>
+                </div>
+            {{/each}}
+            {{!-- <img src="/images/fdsafasdfas.jpg" style="width:100%" alt="幼儿食谱"> --}}
+        </div>
+    </section>
+    {{!--
+    <section id="view">
+        <div class="container h-extend">
+            <div class="row no-gutters mb-5 h-100 align-items-center">
+                <div class="col-md-6 text-right">
+                    <img src="/images/exp.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6 view-right px-5 h-360 pt-4">
+                    <h5 class="c-name mt-5">专家观点</h5>
+
+                    <p class="a-text mt-3">
+                        华阳幼儿园“人本、自主、愉悦、发展”的办园理念和“四心两全三个一”的服务特色，紧紧围绕新区“学有良教、品质卓越”的教育目标，以“优化教师队伍，提升保教质量，创现代化书香幼儿园”为总体目标，着眼于幼儿的终身发展。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="exp" class="py-5">
+        <h4 class="leaf text-center mb-5">家长经验</h4>
+        <div class="container">
+            <div class="row">
+
+                {{#each parenting}}
+
+                <div class="col-md-4 mb-3">
+                    <a href="/detail/parenting/{{id}}">
+                        <div class="exp-item">
+                            {{breif}}
+                        </div>
+                    </a>
+                    <div class="row mt-4p5 pl-1 exp-t">
+                        <div class="col-4">
+                            <img src="{{cover}}" height="110" width="110" style="object-fit:cover" class="rounded-circle" alt="">
+                        </div>
+                        <div class="col-6">{{title}}</div>
+                    </div>
+                </div>
+
+                {{/each}}
+
+
+            </div>
+        </div>
+
+
+
+
+    </section> --}}
+
+    <section id="contact">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <h4 class="title">
+                        联系我们
+                    </h4>
+
+                    <h5 class="sub-title">
+                        CONTACT US
+                    </h5>
+                </div>
+                <div class="col-md-4">
+
+                    <p> 地址: {{contact.addr}}</p>
+                    <p> 邮编: {{contact.postcode}}</p>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <p>邮箱: {{contact.email}}</p>
+                    <p>电话:
+                        <strong>{{contact.tel}}</strong>
+                    </p>
+                </div>
+
+                <div class="col-md-1 pt-3 show-qrcode">
+                    <a href="javascript:void(0)" class="wechat">
+                        <img src="/images/wechat.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>

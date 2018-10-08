@@ -1,0 +1,187 @@
+{{!
+< default}} <section id="top-banner">
+    <img src="/images/banner-child.jpg" class="img-fluid">
+    </section>
+
+    <section id="model">
+        <div class="container">
+            <h4 class="leaf mt-5 mb-20 text-center">班级星宝贝</h4>
+
+            <div class="d-flex justify-content-center  flex-wrap ">
+
+                {{#each star}}
+                <div class="model-item mr-2 resize-model">
+                    <img src="{{cover}}" class="rounded-circle baby-img" height="169px" width="169px" alt="">
+                    <div class="baby-text text-center px-3">
+                        <span class="c-name">{{title}}</span>
+                        <p class="s-name">{{class}}</p>
+                        <p class="s-text">{{breif}}</p>
+                    </div>
+                </div>
+                {{/each}}
+
+            </div>
+        </div>
+    </section>
+
+    <section id="award" class="pt-5">
+        <div class="swiper-container container">
+            <h4 class="leaf text-center mb-5">比赛获奖宝贝</h4>
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide">
+                    <div class="row justify-content-center">
+                        <div>
+                            <img src="{{award.0.cover}}" class=" mr-2 bp" height="321px" width="321px" style="object-fit:cover" alt="">
+                            <div class="award-intro text-center py-2">
+                                <span class="c-name">{{award.0.title}}</span>
+                                <p class="s-name">{{award.0.award}}</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="{{award.1.cover}}" class=" mr-2 bp" height="321px" width="321px" style="object-fit:cover" alt="">
+                            <div class="award-intro text-center py-2">
+                                <span class="c-name">{{award.1.title}}</span>
+                                <p class="s-name">{{award.1.award}}</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="{{award.2.cover}}" class=" mr-2 bp" height="321px" width="321px" style="object-fit:cover" alt="">
+                            <div class="award-intro text-center py-2">
+                                <span class="c-name">{{award.2.title}}</span>
+                                <p class="s-name">{{award.2.award}}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="row justify-content-center">
+                        <div>
+                            <img src="{{award.3.cover}}" class="mr-2" height="321px" width="321px" style="object-fit:cover" alt="">
+                            <div class="award-intro text-center py-2">
+                                <span class="c-name">{{award.3.title}}</span>
+                                <p class="s-name">{{award.3.award}}</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="{{award.4.cover}}" class="mr-2" height="321px" width="321px" style="object-fit:cover" alt="">
+                            <div class="award-intro text-center py-2">
+                                <span class="c-name">{{award.4.title}}</span>
+                                <p class="s-name">{{award.4.award}}</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="{{award.5.cover}}" class=" mr-2" height="321px" width="321px" style="object-fit:cover" alt="">
+                            <div class="award-intro text-center py-2">
+                                <span class="c-name">{{award.5.title}}</span>
+                                <p class="s-name">{{award.5.award}}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="swiper-pagination spmt">
+                <div class="swiper-button-prev award-circle"></div>
+                <div class="swiper-button-next award-circle"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="award" class="pt-5">
+        <div class="container  swiper-container">
+            <h4 class="leaf text-center mb-5">比赛获奖宝贝</h4>
+            <div class="d-flex justify-content-center flex-wrap swiper-wrapper">
+                <div class="swiper-slide award-item">
+                    <img src="/images/model-1.jpg" class="img-fluid mr-2" alt="">
+                    <div class="award-intro text-center py-2">
+                        <span class="c-name">李娜娜</span>
+                        <p class="s-name">唱歌比赛优秀奖</p>
+                    </div>
+                </div>
+                <div class="swiper-slide award-item">
+                    <img src="/images/model-2.jpg" class="img-fluid mr-2" alt="">
+                    <div class="award-intro text-center py-2">
+                        <span class="c-name">李娜娜</span>
+                        <p class="s-name">唱歌比赛优秀奖</p>
+                    </div>
+                </div>
+                <div class=" swiper-slide award-item">
+                    <img src="/images/model-3.jpg" class="img-fluid mr-2" alt="">
+                    <div class="award-intro text-center py-2">
+                        <span class="c-name">李娜娜</span>
+                        <p class="s-name">唱歌比赛优秀奖</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center hidden-sm swiper-pagination">
+                <div class="swiper-button-prev award-circle active mr-2"></div>
+                <div class="swiper-button-next award-circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="hidden-sm">
+        <div class="container">
+            <h4 class="leaf mt-5 mb-5 text-center">绘画、手工作品展示</h4>
+            <div class="row img-holder justify-content-center no-gutters">
+                <div class="col-6 col-md-5 text-right pr-1">
+                    <img src="{{work.0.cover}}" class="work-img-1" style="object-fit:cover" alt="">
+                </div>
+                <div class="col-6 col-md-5">
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-6 text-left">
+                            <img src="{{work.1.cover}}" class="work-img-2" style="object-fit:cover" alt="">
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <img src="{{work.2.cover}}" class="work-img-3" style="object-fit:cover" alt="">
+                        </div>
+                    </div>
+                    <div class="row mt-1 no-gutters">
+                        <img src="{{work.3.cover}}" class="work-img-4" style="object-fit:cover" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <h4 class="title">
+                        联系我们
+                    </h4>
+
+                    <h5 class="sub-title">
+                        CONTACT US
+                    </h5>
+                </div>
+                <div class="col-md-4">
+
+                    <p> 地址: {{contact.addr}}</p>
+                    <p> 邮编: {{contact.postcode}}</p>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <p>邮箱: {{contact.email}}</p>
+                    <p>电话:
+                        <strong>{{contact.tel}}</strong>
+                    </p>
+                </div>
+
+                <div class="col-md-1 pt-3 show-qrcode">
+                    <a href="javascript:void(0)" class="wechat">
+                        <img src="/images/wechat.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>

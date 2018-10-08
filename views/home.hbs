@@ -1,0 +1,319 @@
+
+
+ <div id="video" class="hidden-sm">
+	
+	<a href="javascript:void(0)" id="moveNext"><img src="images/mouse.png" class="mouse"></a>
+	<video autoplay loop id="myVideo" width="100%" height="100%"   class="fill" poster="images/banner.jpg">
+		<source src="video.mp4" type="video/mp4"> 您的浏览器不支持HTML5视频，请升级或更换浏览器
+	</video>
+	
+</div>
+
+	<section id="news">
+		<div class="container clearfix">
+			<div class="row mb-40">
+				<div class="col-md-6">
+					<h4 class="title">新闻中心</h4>
+					<h5 class="sub-title">NEWS</h5>
+				</div>
+				<div class="col-lg-6 col-md-8 col-12">
+					<ul class="nav" style="justify-content: flex-end;">
+						{{!-- <li>
+							<a href="/news/all/1">全部</a>
+						</li>
+						<span class="ml-12px">/</span>
+						<li>
+							<a href="/news/school/1">校园</a>
+						</li>
+						<span class="ml-12px">/</span>
+						<li>
+							<a href="/news/teacher/1">师生</a>
+						</li>
+						<span class="ml-12px">/</span>
+						<li>
+							<a href="/news/health/1">健康</a>
+						</li>
+						<span class="ml-12px">/</span>
+						<li>
+							<a href="/news/all/1">
+								<span class="more">more</span>
+							</a>
+						</li> --}}
+
+						{{!-- <li>
+							<a href="/news/all/1">全部</a>
+						</li>
+						<span class="ml-12px">/</span> --}}
+						<li>
+							<a href="/news/school/1">校园</a>
+						</li>
+						<span class="ml-12px">/</span>
+						<li>
+							<a href="/news/home/1">家园</a>
+						</li>
+						<span class="ml-12px">/</span>
+						{{!-- <li>
+							<a href="/news/smallvideo/1">视频小新闻</a>
+						</li> --}}
+						<li>
+							<a href="/video/1">视频小新闻</a>
+						</li>
+						<span class="ml-12px">/</span>
+						<li>
+							<a href="/news/exchange/1">对外交流</a>
+						</li>
+						<span class="ml-12px">/</span>
+						<li>
+							<a href="/news/all/1">
+								<span style="color:#5d3505;" class="more">全部</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-center align-items-center flex-wrap">
+				<img src="{{news.0.cover}}"  class="rounded home-news">
+				<a href="/detail/news/{{news.0.id}}">
+					<div class="news-item pt-4 p-4 mt-2 border-bottom border-right show-sm ">
+						<h5 class="num text-right mb-4 r-c text-sm-center">01</h5>
+						<h5 class="text-title mb-3 text-center">{{news.0.title}}</h5>
+						<p class="text text-center">{{news.0.breif}}</p>
+						
+					</div>
+				</a>
+				<a href="/detail/news/{{news.1.id}}">
+					<div class="news-item pt-4 p-4 border-bottom border-right">
+						<h5 class="num text-right mb-4 r-c">02</h5>
+						<h5 class="text-title mb-3 text-center">{{news.1.title}}</h5>
+						<p class="text text-left">{{news.1.breif}}</p>
+					</div>
+				</a>
+				<a href="/detail/news/{{news.2.id}}">
+					<div class="news-item pt-4 p-4 border-bottom">
+						<h5 class="num text-right mb-4 r-c">03</h5>
+						<h5 class="text-title mb-3 text-center">{{news.2.title}}</h5>
+						<p class="text text-left">{{news.2.breif}}</p>
+					</div>
+				</a>
+				<a href="/detail/news/{{news.0.id}}" class="hidden-sm hidden-md">
+					<div class="news-desc pt-5 hidden-sm hidden-md">
+						<h5 class="text-title mb-3">{{news.0.title}}</h5>
+						<p class="text mb-5">{{news.0.breif}} </p>
+						<div class="row no-gutters hidden-md">
+							<div class="col-3 more-topb pt-4 hidden-md">
+								<a href="/detail/news/{{news.0.id}}" class="a-clear">more
+									<span class="more"></span>
+								</a>
+							</div>
+							<div class="col-7 border-top"></div>
+						</div>
+					</div>
+				</a>
+				<a href="/detail/news/{{news.3.id}}">
+					<div class="news-item pt-4 p-4">
+						<h5 class="num text-right mb-4 r-c">04</h5>
+						<h5 class="text-title mb-3 text-center">{{news.3.title}}</h5>
+						<p class="text text-left">{{news.3.breif}}</p>
+					</div>
+				</a>
+				<a href="/detail/news/{{news.4.id}}" >
+					<div class="news-item pt-4 p-4 border-left">
+						<h5 class="num text-right mb-4 r-c">05</h5>
+						<h5 class="text-title mb-3 text-center">{{news.4.title}}</h5>
+						<p class="text text-left">{{news.4.breif}}</p>
+					</div>
+				</a>
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	{{!-- <section id="campus" class="">
+		<div class="container pt-60">
+			<h4 class="title">四大园区</h4>
+			<span class="sub-title">CAMPUS</span>
+
+			<div class="d-flex justify-content-center flex-wrap">
+				<div class="nursery">
+					<a href="/group/all">
+					<img src="images/nursery-1.jpg"  class="img-fluid" alt="">
+						<p class="a-text text-center mt-2">华阳总园</p>
+				</a>
+				</div>
+
+				<div class="nursery">
+					<a href="/group/areaE">
+					<img src="images/nursery-2.jpg"  class="img-fluid" alt="">
+					<p class="a-text text-center mt-2">华阳东区园</p>
+					</a>
+				</div>
+
+				<div class="nursery">
+					<a href="/group/areaW">
+					<img src="images/nursery-3.jpg"  class="img-fluid" alt="">
+						<p class="a-text text-center mt-2">华阳南区园</p>
+				</a>
+				</div>
+
+				<div class="nursery">
+					<a href="/group/areaS">
+					<img src="images/nursery-4.jpg"  class="img-fluid" alt="">
+						<p class="a-text text-center mt-2">华阳西区园</p>
+				</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="teachers" >
+		<div class="container  pt-60">
+			<h4 class="title">师生风采</h4>
+			<span class="sub-title">TEACHERS</span>
+		</div>
+
+		<div class="container-fluid">
+		
+				<div class="row h-200px align-items-center border-bottom">
+
+					<div class="col-4 col-md-4 text-right">
+						<img src="{{teacher.0.cover}}" class="rounded-circle home-teacher"  alt="">
+					</div>
+
+					<div class="col-4 col-md-1 text-left bl py-3 pl-4 ml-5 mr-5">
+						<span class="name">{{teacher.0.title}}</span>
+						<br>
+						<span class="text">{{teacher.0.tag}}</span>
+						
+					</div>
+
+					<div class="col-md-3 line">
+						<p class="text inline">我是一名普通而平凡的幼儿教师，一直在华阳幼儿园这块沃土上默默地耕耘着。1992年怀揣着对孩子的热爱，我踏上了幼儿教师的岗位。
+						</p>
+					</div>
+					<div class="col-md-1 text-center hidden-sm">
+						<img src="images/right.png" class="img-fluid" alt="">
+					</div>
+
+				</div>
+			
+		
+				<div class="row h-200px align-items-center border-bottom">
+
+					<div class="col-4 col-md-4 text-right">
+						<img src="{{teacher.1.cover}}" class="rounded-circle home-teacher" alt="">
+					</div>
+
+					<div class="col-4 col-md-1 text-left bl py-3 pl-4 ml-5 mr-5">
+							<span class="name">{{teacher.1.title}}</span>
+						<br>
+						<span class="text">{{teacher.1.tag}}</span>
+					
+					</div>
+
+					<div class="col-md-3 line">
+						<p class="text inline">我，是一名幼儿教师，这是我理想的职业，我在这里播种了我的理想。从教三年以来，我一直坚守在教学第一线，勤奋踏实、年轻奋进是我的代名词。
+						</p>
+					</div>
+					<div class="col-md-1 text-center hidden-sm">
+						<img src="images/right.png" class="img-fluid" alt="">
+					</div>
+
+				</div>
+		
+
+		
+				<div class="row h-200px align-items-center border-bottom">
+
+					<div class="col-4 col-md-4 text-right">
+						<img src="{{teacher.2.cover}}" class="rounded-circle home-teacher"  alt="">
+					</div>
+
+					<div class="col-4 col-md-1 text-left bl py-3 pl-4 ml-5 mr-5">
+							<span class="name">{{teacher.2.title}}</span>
+						<br>
+						<span class="text">{{teacher.2.tag}}</span>
+					
+					</div>
+
+					<div class="col-md-3 line ">
+						<p class="text inline">初见罗老师其人，温柔雅静；细听罗老师上课，圆润悦耳。近三年的教学之路，罗老师用语言、行动、心灵诠释着爱的教育。
+						</p>
+					</div>
+					<div class="col-md-1 text-center hidden-sm">
+						<img src="images/right.png" class="img-fluid" alt="">
+					</div>
+
+				</div>
+			
+		</div>
+	</section> --}}
+
+
+
+
+
+
+
+{{!-- <section id="about">
+    <div class="container">
+        <h4 class="title">关于我们</h4>
+        <span class="sub-title">About US</span>
+        <div class="row mt-90">
+            <div class="col-md-8">
+                <h5>华阳幼儿园</h5>
+                <p>
+                    我们将为孩子提供非凡的学习体验，独立的空间，老师的关怀与支持，让孩子们能够在不同的领域出类拔萃温馨且适宜的学习环境， 满足孩子们在社交、文化以及语言等各方面的发展需求；积极且不被打扰的氛围丰富多彩....
+                </p>
+            </div>
+            <div class="col-12">
+                <a href='/group/all'>
+                    <span class="more">more</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</section> --}}
+
+
+<section id="contact">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-4">
+
+                <h4 class="title">
+                    联系我们
+                </h4>
+
+                <h5 class="sub-title">
+                    CONTACT US
+                </h5>
+            </div>
+            <div class="col-md-4">
+
+                <p> 地址: {{contact.addr}}</p>
+                <p> 邮编: {{contact.postcode}}</p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <p>邮箱: {{contact.email}}</p>
+                <p>电话: <strong>{{contact.tel}}</strong></p>
+            </div>
+
+            <div class="col-md-1 pt-3 show-qrcode">
+                <a href="javascript:void(0)" class="wechat">
+                    <img src="images/wechat.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
